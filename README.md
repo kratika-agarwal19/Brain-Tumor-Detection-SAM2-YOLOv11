@@ -1,78 +1,62 @@
-🧠 NeuroScan AI: Advanced Neuro-Oncology Suite
+# <p align="center">🧠 NeuroScan AI: Precision Neuro-Oncology Suite</p>
+<p align="center"><i>An Integrated Pipeline for Brain Tumor Classification, Localization, and Segmentation</i></p>
 
-An Integrated Pipeline for Brain Tumor Classification & Precision Segmentation
+---
 
-📊 Performance Analytics & Validation
+## 📊 Model Training & Performance Analytics
+The system is built upon the **AIIMS Delhi Research Framework**, trained over 50 epochs to ensure high clinical reliability and diagnostic accuracy.
 
-The system is built upon the AIIMS Delhi Research Framework, trained over 50 epochs to ensure high diagnostic reliability.
-
-📈 Training Dynamics (Loss & Accuracy)
-
-The following visualization illustrates the convergence of our hybrid models during the training phase:
-
+### 📈 Training Metrics (Loss & Accuracy)
+The following visualization illustrates the loss convergence and accuracy trends during the training phase:
 <p align="center">
-<img src="losses.jpeg" width="850" alt="Training Metrics">
+  <img src="losses.jpeg" width="850" alt="Training Progress">
 </p>
 
-🔬 Statistical Evaluation
-
-Our models are validated using standard clinical metrics including Precision, Recall, and F1-Score.
-
+### 🔬 Statistical Validation
+Our models are validated using standard clinical metrics including Precision, Recall, and F1-Score to ensure minimal false negatives.
 <p align="center">
-<img src="Precision.jpeg" width="280">
-<img src="recall.png" width="280">
-<img src="f1%20score.jpg" width="280">
+  <img src="Precision.jpeg" width="280" alt="Precision Graph"> 
+  <img src="recall.png" width="280" alt="Recall Graph">
+  <img src="f1%20score.jpg" width="280" alt="F1 Score Graph">
 </p>
 
-💻 Clinical Interface & Segmentation Results
+---
 
-The NeuroScan AI dashboard provides a seamless experience for radiologists to analyze MRI scans in real-time.
+## 🖥️ Clinical Dashboard & Segmentation Result
+The following images showcase the live deployment of the **VGG16 + YOLOv11 + SAM2** hybrid pipeline.
 
-🖥️ User Interface Dashboard
-
+### 🌐 System Interface (Streamlit Dashboard)
+The dashboard allows radiologists to upload MRI scans and receive automated diagnostic insights, including pathology type and confidence scores.
 <p align="center">
-<!-- Check if filename is website image.jpg or website_image.jpg -->
-<img src="website%20image.jpg" width="900" alt="Clinical Dashboard">
+  <img src="dashboard.jpg" width="900" alt="User Interface">
 </p>
 
-🧩 Precision Segmentation & Severity Assessment
-
-By integrating SAM2 with YOLOv11, the system achieves pixel-level boundary tracing and automated Tumor-to-Brain Area Ratio calculation.
-
+### 🧩 Automated Tumor Segmentation
+The segmentation engine identifies the exact tumor boundary and calculates the **Tumor-to-Brain Area Ratio** for automated severity assessment.
 <p align="center">
-<!-- Check if filename has double spaces or special characters -->
-<img src="segmentation%20result%20%20with%20severity%20and%20area%20ratio.jpg" width="900" alt="Segmentation Output">
+  <img src="segmentation.jpg" width="900" alt="Segmentation Output">
 </p>
 
-🛠️ Technology Stack
+---
 
-Classification: VGG16 (Transfer Learning)
+## 🛠️ Technology Stack
+* **Pathology Classification:** VGG16 (Transfer Learning)
+* **Object Localization:** YOLOv11 (Real-time Detection)
+* **Mask Segmentation:** SAM2 (Meta AI - Segment Anything Model)
+* **Web Interface:** Streamlit (Python Framework)
 
-Object Detection: YOLOv11
+---
 
-Segmentation: SAM2 (Meta AI)
+## 📂 Project Structure & Model Weights
+To execute the suite locally, ensure the following model weights are present in the root directory:
+- `final_weights.weights.h5` (VGG16 Weights)
+- `best (5).pt` (YOLOv11 Weights)
+- `sam2_b.pt` (SAM2 Weights)
 
-Framework: Streamlit, TensorFlow, PyTorch
+---
 
-🚀 Installation & Usage
+## 🚀 Installation & Deployment Instructions
 
-Clone the Repository:
-
-git clone [https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git](https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git)
-
-
-Install Dependencies:
-
-pip install -r requirements.txt
-
-
-Run Application:
-
-streamlit run app.py
-
-
-⚖️ Medical Disclaimer
-
-Disclaimer: This software is a research prototype designed for educational purposes. All AI-generated diagnostic reports must be verified by a board-certified Medical Professional.
-
-<p align="center">© 2026 NeuroScan Medical Analytics | Precision Oncology</p>
+1. **Clone the Repository:**
+   ```bash
+   git clone [https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git](https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git)
