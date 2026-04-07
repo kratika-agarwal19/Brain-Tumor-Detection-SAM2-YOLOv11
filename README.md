@@ -1,61 +1,78 @@
-# 🧠 NeuroScan AI: Advanced Neuro-Oncology Suite
-**An Integrated Pipeline for Brain Tumor Classification & Precision Segmentation**
+🧠 NeuroScan AI: Advanced Neuro-Oncology Suite
 
----
+An Integrated Pipeline for Brain Tumor Classification & Precision Segmentation
 
-## 📊 Performance Analytics & Validation
-The system is built upon the **AIIMS Delhi Research Framework**, trained over 50 epochs to ensure high diagnostic reliability.
+📊 Performance Analytics & Validation
 
-### 📈 Training Dynamics (Loss & Accuracy)
+The system is built upon the AIIMS Delhi Research Framework, trained over 50 epochs to ensure high diagnostic reliability.
+
+📈 Training Dynamics (Loss & Accuracy)
+
 The following visualization illustrates the convergence of our hybrid models during the training phase:
+
 <p align="center">
-  <img src="losses.jpeg" width="850" alt="Training Metrics">
+<img src="losses.jpeg" width="850" alt="Training Metrics">
 </p>
 
-### 🔬 Statistical Evaluation
-Our models are validated using standard clinical metrics including Precision, Recall, and F1-Score to ensure minimal false negatives in tumor detection.
+🔬 Statistical Evaluation
+
+Our models are validated using standard clinical metrics including Precision, Recall, and F1-Score.
+
 <p align="center">
-  <img src="precision.png" width="280"> 
-  <img src="recall.png" width="280">
-  <img src="f1_score.jpg" width="280">
+<img src="Precision.jpeg" width="280">
+<img src="recall.png" width="280">
+<img src="f1%20score.jpg" width="280">
 </p>
 
----
+💻 Clinical Interface & Segmentation Results
 
-## 💻 Clinical Interface & Segmentation Results
-The NeuroScan AI dashboard provides a seamless experience for radiologists to upload and analyze MRI scans in real-time.
+The NeuroScan AI dashboard provides a seamless experience for radiologists to analyze MRI scans in real-time.
 
-### 🖥️ User Interface Dashboard
+🖥️ User Interface Dashboard
+
 <p align="center">
-  <img src="website_image.jpg" width="900" alt="Clinical Dashboard">
+<!-- Check if filename is website image.jpg or website_image.jpg -->
+<img src="website%20image.jpg" width="900" alt="Clinical Dashboard">
 </p>
 
-### 🧩 Precision Segmentation & Severity Assessment
-By integrating **SAM2 (Segment Anything Model)** with **YOLOv11**, the system achieves pixel-level boundary tracing. This allows for the automated calculation of the **Tumor-to-Brain Area Ratio**, providing a quantitative severity metric.
+🧩 Precision Segmentation & Severity Assessment
+
+By integrating SAM2 with YOLOv11, the system achieves pixel-level boundary tracing and automated Tumor-to-Brain Area Ratio calculation.
+
 <p align="center">
-  <img src="segmentation_result.jpg" width="900" alt="Segmentation Output">
+<!-- Check if filename has double spaces or special characters -->
+<img src="segmentation%20result%20%20with%20severity%20and%20area%20ratio.jpg" width="900" alt="Segmentation Output">
 </p>
 
----
+🛠️ Technology Stack
 
-## 🛠️ Technology Stack
-* **Classification:** VGG16 (Transfer Learning)
-* **Object Detection:** YOLOv11
-* **Segmentation:** SAM2 (Meta AI)
-* **Frameworks:** Streamlit, TensorFlow, PyTorch, OpenCV
+Classification: VGG16 (Transfer Learning)
 
----
+Object Detection: YOLOv11
 
-## 📂 Project Structure & Requirements
-To execute the suite locally, ensure the following model weights are present in the root directory:
-* `final_weights.weights.h5` (VGG16 Weights)
-* `best (5).pt` (YOLOv11 Weights)
-* `sam2_b.pt` (SAM2 Weights)
+Segmentation: SAM2 (Meta AI)
 
----
+Framework: Streamlit, TensorFlow, PyTorch
 
-## 🚀 Installation & Usage
+🚀 Installation & Usage
 
-1. **Clone the Repository:**
-   ```bash
-   git clone [https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git](https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git)
+Clone the Repository:
+
+git clone [https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git](https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git)
+
+
+Install Dependencies:
+
+pip install -r requirements.txt
+
+
+Run Application:
+
+streamlit run app.py
+
+
+⚖️ Medical Disclaimer
+
+Disclaimer: This software is a research prototype designed for educational purposes. All AI-generated diagnostic reports must be verified by a board-certified Medical Professional.
+
+<p align="center">© 2026 NeuroScan Medical Analytics | Precision Oncology</p>
