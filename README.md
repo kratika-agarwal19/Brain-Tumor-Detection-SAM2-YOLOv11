@@ -47,11 +47,20 @@ The segmentation engine identifies the exact tumor boundary and calculates the *
 
 ---
 
+---
+
 ## 📂 Project Structure & Model Weights
-To execute the suite locally, ensure the following model weights are present in the root directory:
-- `final_weights.weights.h5` (VGG16 Weights)
-- `best (5).pt` (YOLOv11 Weights)
-- `sam2_b.pt` (SAM2 Weights)
+To execute the suite locally, the following pre-trained weights must be present in the root directory. 
+
+> **Note:** Due to GitHub's file size limitations, the heavy weights are hosted in the [Releases](https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11/releases/tag/v1.0) section.
+
+| Model Component | File Name | Purpose |
+| :--- | :--- | :--- |
+| **Classification** | `final_weights.weights.h5` | VGG16 Pathology Categorization |
+| **Localization** | `best (5).pt` | YOLOv11 Tumor Detection |
+| **Segmentation** | `sam2_b.pt` | SAM2 Pixel-Level Boundary Tracing |
+
+---
 - ---
 
 ## 📦 High-Precision Model Weights
