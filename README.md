@@ -45,3 +45,9 @@ The system uses the following pre-trained weights (ensure these are in your main
    ```bash
    git clone [https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git](https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git)
    cd Brain-Tumor-Detection-SAM2-YOLOv11
+Install Dependencies:
+Bash
+pip install -r requirements.txt
+Run the Clinical Dashboard:
+Bash
+streamlit run app.py   
