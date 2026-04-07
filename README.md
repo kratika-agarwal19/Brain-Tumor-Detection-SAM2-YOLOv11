@@ -52,6 +52,17 @@ To execute the suite locally, ensure the following model weights are present in 
 - `final_weights.weights.h5` (VGG16 Weights)
 - `best (5).pt` (YOLOv11 Weights)
 - `sam2_b.pt` (SAM2 Weights)
+- ---
+
+## 📦 High-Precision Model Weights
+To ensure high-performance segmentation and classification, the required pre-trained weights are hosted in the **[Releases](https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11/releases/tag/v1.0)** section of this repository.
+
+### **Instructions:**
+1. Navigate to the **Releases** tab.
+2. Download `sam2_b.pt` and `final_weights.weights.h5` from the Assets.
+3. Place these files in the root directory of the project before running `app.py`.
+
+---
 
 ---
 
