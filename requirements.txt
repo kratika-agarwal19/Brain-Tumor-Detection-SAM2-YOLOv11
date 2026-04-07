@@ -1,18 +1,8 @@
-# Core AI Frameworks
-ultralytics>=8.3.0
-tensorflow>=2.15.0
-torch>=2.0.0
-torchvision>=0.15.0
-
-# Computer Vision & Data
+streamlit
+streamlit-option_menu
+ultralytics
+tensorflow
 opencv-python
 numpy
+Pillow
 matplotlib
-pillow
-
-# Web Dashboard (If you used Streamlit)
-streamlit
-
-# Utilities
-scikit-learn
-pandas
