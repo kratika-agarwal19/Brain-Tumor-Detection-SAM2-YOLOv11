@@ -45,7 +45,6 @@ The segmentation engine identifies the exact tumor boundary and calculates the *
 * **Mask Segmentation:** SAM2 (Meta AI - Segment Anything Model)
 * **Web Interface:** Streamlit (Python Framework)
 
----
 
 ---
 
@@ -61,7 +60,6 @@ To execute the suite locally, the following pre-trained weights must be present 
 | **Segmentation** | `sam2_b.pt` | SAM2 Pixel-Level Boundary Tracing |
 
 ---
-- ---
 
 ## 📦 High-Precision Model Weights
 To ensure high-performance segmentation and classification, the required pre-trained weights are hosted in the **[Releases](https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11/releases/tag/v1.0)** section of this repository.
