@@ -60,3 +60,9 @@ To execute the suite locally, ensure the following model weights are present in 
 1. **Clone the Repository:**
    ```bash
    git clone [https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git](https://github.com/kratika-agarwal19/Brain-Tumor-Detection-SAM2-YOLOv11.git)
+2. Install Required Dependencies:
+   ```bash
+    pip install -r requirements.txt
+3.  Launch the Application:
+    ```bash
+    streamlit run web3.py
