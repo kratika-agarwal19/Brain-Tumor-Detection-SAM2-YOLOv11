@@ -60,7 +60,7 @@ To ensure high-performance segmentation and classification, the required pre-tra
 ### **Instructions:**
 1. Navigate to the **Releases** tab.
 2. Download `sam2_b.pt` and `final_weights.weights.h5` from the Assets.
-3. Place these files in the root directory of the project before running `app.py`.
+3. Place these files in the root directory of the project before running `web3.py`.
 
 ---
 
